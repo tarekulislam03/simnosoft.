@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Menu, X, ArrowUpRight } from 'lucide-react';
+import { Menu, X } from 'lucide-react';
 import { content } from '../data/content';
 
 export default function Navbar() {
@@ -27,7 +27,7 @@ export default function Navbar() {
           )}
         </a>
 
-        {/* Center Links */}
+        {/* Center / Right Links */}
         <nav className="hidden md:flex items-center gap-8" aria-label="Main Navigation">
           <a
             href="#"
@@ -51,19 +51,6 @@ export default function Navbar() {
             FAQs
           </a>
         </nav>
-
-        {/* CTA Button Right (Pill with circular arrow icon) */}
-        <div className="hidden md:flex items-center">
-          <a
-            href="#contact"
-            className="inline-flex items-center gap-2.5 pl-5 pr-2 py-2 text-[14px] font-medium text-white bg-white/10 hover:bg-white/15 border border-white/20 rounded-full transition-all duration-200 backdrop-blur-sm group"
-          >
-            <span>Talk to our experts</span>
-            <span className="w-7 h-7 rounded-full bg-white text-[#0B001A] flex items-center justify-center transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5">
-              <ArrowUpRight className="w-4 h-4" />
-            </span>
-          </a>
-        </div>
 
         {/* Mobile Hamburger Button */}
         <div className="flex md:hidden">
@@ -100,17 +87,14 @@ export default function Navbar() {
                 {item.name}
               </a>
             ))}
-          </nav>
-          <div className="pt-3 border-t border-white/10">
             <a
-              href="#contact"
+              href="#faq"
               onClick={() => setMobileMenuOpen(false)}
-              className="w-full inline-flex items-center justify-center gap-2.5 px-5 py-3 text-[14px] font-medium text-white bg-white/15 border border-white/20 rounded-full"
+              className="text-[15px] font-medium text-white/70 hover:text-white py-2"
             >
-              <span>Talk to our experts</span>
-              <ArrowUpRight className="w-4 h-4" />
+              FAQs
             </a>
-          </div>
+          </nav>
         </div>
       )}
     </header>

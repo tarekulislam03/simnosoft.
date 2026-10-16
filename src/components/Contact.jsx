@@ -78,9 +78,9 @@ export default function Contact() {
 
   return (
     <section id="contact" className="relative bg-[#0A0017] py-14 sm:py-16 lg:py-20 border-b border-white/10 overflow-hidden scroll-mt-20">
-      {/* Ambient Glow */}
+      {/* Ambient Glow with gentle breathing animation */}
       <div 
-        className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[500px] rounded-full bg-purple-600/15 blur-[160px] pointer-events-none" 
+        className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[500px] rounded-full bg-purple-600/15 blur-[160px] pointer-events-none animate-pulse-glow" 
         aria-hidden="true" 
       />
 
@@ -131,7 +131,7 @@ export default function Contact() {
                         name="name"
                         value={formData.name}
                         onChange={handleChange}
-                        placeholder="e.g. Rahul Verma / Alex Smith"
+                        placeholder="Enter your name"
                         className={`w-full px-4 py-3 rounded-xl bg-white/[0.05] border ${
                           errors.name ? 'border-rose-500/70 focus:border-rose-500' : 'border-white/10 focus:border-purple-400'
                         } text-white placeholder-white/30 text-sm focus:outline-none focus:ring-1 focus:ring-purple-400 transition-all`}
@@ -154,7 +154,7 @@ export default function Contact() {
                         name="email"
                         value={formData.email}
                         onChange={handleChange}
-                        placeholder="name@company.com"
+                        placeholder="Enter your email"
                         className={`w-full px-4 py-3 rounded-xl bg-white/[0.05] border ${
                           errors.email ? 'border-rose-500/70 focus:border-rose-500' : 'border-white/10 focus:border-purple-400'
                         } text-white placeholder-white/30 text-sm focus:outline-none focus:ring-1 focus:ring-purple-400 transition-all`}
@@ -178,7 +178,7 @@ export default function Contact() {
                       name="company"
                       value={formData.company}
                       onChange={handleChange}
-                      placeholder="e.g. Apex Meridian / FinTech Pvt Ltd"
+                      placeholder="Enter your company"
                       className="w-full px-4 py-3 rounded-xl bg-white/[0.05] border border-white/10 text-white placeholder-white/30 text-sm focus:outline-none focus:border-purple-400 focus:ring-1 focus:ring-purple-400 transition-all"
                     />
                   </div>
@@ -193,7 +193,7 @@ export default function Contact() {
                       rows={4}
                       value={formData.message}
                       onChange={handleChange}
-                      placeholder="Briefly describe what you're building, key technical challenges, or target timeline..."
+                      placeholder="Describe your requirement"
                       className={`w-full px-4 py-3 rounded-xl bg-white/[0.05] border ${
                         errors.message ? 'border-rose-500/70' : 'border-white/10'
                       } text-white placeholder-white/30 text-sm focus:outline-none focus:border-purple-400 focus:ring-1 focus:ring-purple-400 transition-all resize-none`}
