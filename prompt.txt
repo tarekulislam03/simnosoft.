@@ -1,0 +1,57 @@
+Build a single-page, responsive website for "Simnosoft", a custom software company serving US and UK businesses (web apps, ERPs, mobile apps). Use React + Tailwind CSS (Vite). Output the full, working code.
+
+STYLE
+Modern, professional, clean corporate SaaS. Flat surfaces, soft borders, subtle shadows. NO gradients, blobs, glows, glassmorphism, neon, or abstract AI-style graphics. No stock photos or illustrations.
+
+DESIGN TOKENS
+- Backgrounds: #FFFFFF and #F8FAFC, alternating by section
+- Headings: #0F172A | Body text: #475569
+- Accent (only one): #2563EB, hover #1D4ED8
+- Footer background: #0B1220
+- Border: #E2E8F0
+- Font: Inter (Google Fonts), weights 400/500/600/700
+- Radius: cards 16px, buttons and inputs 12px, tags/pills 999px
+- Container: max-width 1200px, centered. Section padding: 96px vertical desktop, 64px mobile
+- Accent used only for buttons, links, and key highlights
+
+GLOBAL
+- Sticky navbar: logo left, links center (About, Work, Contact), "Book a call" button right. Collapses to a hamburger menu on mobile.
+- Smooth scroll to sections
+- Motion: subtle fade-up on scroll and 200ms hover transitions only
+- Fully responsive, accessible (semantic HTML, alt text, focus states, proper contrast)
+
+SECTIONS (in this order)
+
+1. HERO (two columns)
+- Pill tag: "Custom Software for US & UK Businesses"
+- H1: "Custom software built around how your business actually works."
+- Subtext (one line): web apps, ERPs and mobile apps, delivered with fixed scope and clear timelines
+- Buttons: primary "Book a free audit call", secondary "View our work"
+- Right: placeholder dashboard screenshot inside a rounded browser-window frame (dots, address bar)
+- Trust row below: 3 stats (Projects delivered, Countries served, Years of experience). Use placeholder numbers in a config object at the top of the file.
+
+2. ABOUT
+- Left: heading "A small senior team, not an agency maze" plus a 2-3 sentence paragraph
+- Right: 3 rounded cards, each with a lucide-react icon, title and one line: "Direct communication", "Fixed scope & price", "Built to scale"
+- Below: a row of plain tech-stack chips (React, Node.js, PostgreSQL, MongoDB, React Native, AWS)
+
+3. WORKS & REVIEWS
+- Heading plus one sentence
+- 3 case-study cards: screenshot placeholder, industry tag, one-line title, bold result metric (e.g. "Cut billing time by 60%"), lift slightly on hover
+- Below: 3 testimonial cards (quote, name, role, company, country). Keep them in a data array so they are easy to replace or remove.
+
+4. CONTACT (one rounded container, split layout)
+- Left: form with name, email, company, project type (select), budget range (select), message, and a full-width blue "Request a call" button. Include validation and a success state. Wire to a placeholder handler (comment where to plug in an API or Formspree).
+- Right: Google Maps iframe embed (rounded 16px, grayscale via CSS filter) with a placeholder location, plus email, location and the line "We reply within 24 hours" below it
+
+5. FOOTER (dark #0B1220)
+- Logo and one-line tagline, quick links, contact details, social icons, copyright, privacy link
+
+RULES
+- Every section: one heading and one sentence, no text walls
+- Keep all copy, stats, projects, testimonials and contact details in one data/config object at the top so I can edit them easily
+- Clean, componentized code (Navbar, Hero, About, Work, Contact, Footer)
+- Give the file structure, run commands, and the complete code
+
+
+generate each sections oen by one, start with hero section then ask for next section, when I say yes do it. and work on only that section when doing that section.

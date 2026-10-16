@@ -1,0 +1,18 @@
+LEFT
+- Eyebrow: plain text "About Simnosoft", Inter 13px/600, uppercase, letter-spacing 0.08em, in the existing accent color. Remove the pill, border, background and glowing dot.
+- H2: "A small senior team, not an agency maze." One color for the whole heading. Remove the italic and the highlighted-color words.
+- Paragraph: max 3 sentences, max-width 520px, line-height 1.65: "We work directly with founders and operations leaders. Every project is led by senior engineers, with no account managers and no handoffs. You get fixed scope, clear milestones and software built to last."
+
+RIGHT: 3 stacked cards, 16px gap
+- Solid background (the existing card color, fully opaque), 1px solid border in the existing border color, radius 12px, padding 28px. Remove backdrop-blur, translucency, shadows and glow.
+- Remove the icon tiles and icons. In their place: a number "01" / "02" / "03" in the existing serif font, 24px, in the existing accent color, in a 48px left column with a 1px vertical divider after it.
+- Title: 18px/600. Description: 15px, ONE line, max 90 characters:
+  01 Direct communication: "You talk to the senior engineers building your product."
+  02 Fixed scope and price: "Agreed milestones and a fixed quote before we start."
+  03 Built to scale: "Clean architecture that grows with your business."
+- Hover: border color slightly lighter only, 200ms. No lift, no glow.
+
+TECH STACK (below, margin-top 48px): plain text list separated by thin dividers: React · Node.js · PostgreSQL · MongoDB · React Native · AWS. 14px, muted text color. No chips, no icons.
+
+All copy from content.js.
+

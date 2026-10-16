@@ -1,0 +1,280 @@
+export const content = {
+  brand: {
+    name: "Simnosoft",
+    logo: "/simnosoft-logo.png",
+    tagline: "Custom software built around how your business actually works.",
+    description: "Web apps, ERPs, and mobile apps engineered with precision for US & UK businesses.",
+  },
+  navigation: [
+    { name: "About", href: "#about" },
+    { name: "Services", href: "#services" },
+    { name: "Reviews", href: "#work" },
+    { name: "Contact", href: "#contact" },
+  ],
+  hero: {
+    eyebrow: "Helping Businesses Around The Globe",
+    titlePrefix: "Custom software built around how your business ",
+    titleHighlight: "actually works.",
+    title: "Custom software built around how your business actually works.",
+    subtext: "Web apps, ERPs and mobile apps, delivered with fixed scope and clear timelines.",
+    primaryCta: {
+      text: "Start a Project",
+      href: "#services",
+    },
+    secondaryCta: {
+      text: "Discuss on WhatsApp",
+      href: "https://wa.me/918101402916",
+    },
+    reassurance: "Free 30-minute call · No obligation",
+    mockupWindow: {
+      windowTitle: "Simnosoft · Operations",
+      kpis: [
+        { label: "Revenue", value: "$48,210", change: "+12.4%" },
+        { label: "Orders", value: "1,284", change: "+8.1%" },
+        { label: "Avg. order", value: "$37.55", change: null },
+        { label: "Pending", value: "23", change: null },
+      ],
+      recentOrders: [
+        { id: "#ORD-2041", customer: "Apex Meridian", amount: "$3,420.00", status: "Paid" },
+        { id: "#ORD-2040", customer: "Strata FinTech", amount: "$1,850.00", status: "Paid" },
+        { id: "#ORD-2039", customer: "Beacon Health", amount: "$5,120.00", status: "Pending" },
+        { id: "#ORD-2038", customer: "Nexus Freight", amount: "$2,640.00", status: "Paid" },
+        { id: "#ORD-2037", customer: "Vanguard Labs", amount: "$890.00", status: "Paid" },
+      ],
+    },
+    trustedByLabel: "Trusted by",
+    partners: [
+      { name: "Google for Startups", logo: "/Partners/partner_google_startups.svg" },
+      { name: "AWS", logo: "/Partners/partner_aws.svg" },
+      { name: "Stripe", logo: "/Partners/partner_stripe.svg" },
+      { name: "Supabase", logo: "/Partners/partner_supabase.svg" },
+      { name: "Vercel", logo: "/Partners/partner_vercel.svg" },
+      { name: "Cloudflare", logo: "/Partners/partner_cloudflare.svg" },
+      { name: "Twilio", logo: "/Partners/partner_twilio.svg" },
+      { name: "QuickBooks", logo: "/Partners/partner_quickbooks.svg" },
+    ],
+    howWeWork: {
+      title: "How we work",
+      steps: [
+        {
+          number: "01",
+          title: "Discover",
+          description: "In-depth workflow audit and system architecture mapping.",
+        },
+        {
+          number: "02",
+          title: "Design",
+          description: "Technical specifications, data schemas, and UX prototypes.",
+        },
+        {
+          number: "03",
+          title: "Build",
+          description: "Milestone-driven engineering with weekly working demos.",
+        },
+        {
+          number: "04",
+          title: "Support",
+          description: "Zero-downtime deployment, staff handover, and SLA backing.",
+        },
+      ],
+    },
+    trustedBy: [
+      "VERTEX LOGISTICS",
+      "STRATA CAPITAL",
+      "BEACON HEALTH",
+      "NEXUS FREIGHT",
+      "VANGUARD LABS",
+    ],
+    stats: [
+      { value: "48+", label: "Projects delivered" },
+      { value: "US & UK", label: "Countries served" },
+      { value: "8+", label: "Years of experience" },
+    ],
+  },
+  about: {
+    eyebrow: "WHO WE ARE",
+    statement: "Through strategic consulting and purposeful design we partner with companies to build lasting competitive advantage. Our approach is rooted in data and focused entirely on your long-term growth.",
+    heading: "A small senior team, not an agency maze.",
+    description: "We work directly with founders and operations leaders. Every project is led by senior engineers, with no account managers and no handoffs. You get fixed scope, clear milestones and software built to last.",
+    features: [
+      {
+        number: "01",
+        title: "Direct communication",
+        description: "You talk to the senior engineers building your product.",
+      },
+      {
+        number: "02",
+        title: "Fixed scope and price",
+        description: "Agreed milestones and a fixed quote before we start.",
+      },
+      {
+        number: "03",
+        title: "Built to scale",
+        description: "Clean architecture that grows with your business.",
+      },
+    ],
+    techStack: [
+      "React",
+      "Node.js",
+      "PostgreSQL",
+      "MongoDB",
+      "React Native",
+      "AWS",
+    ],
+  },
+  services: {
+    eyebrow: "OUR SERVICES",
+    heading: "Software & Digital Solutions.",
+    subtitle: "Custom software development, business automation, and digital design engineered for real daily operations.",
+    pricingDisclaimer: "Note: These are sample and standard pricing estimates. Final cost can vary according to your specific business requirements, custom features, and integration needs.",
+    items: [
+      {
+        id: "gst-billing",
+        title: "GST Billing Software",
+        price: "₹4,999",
+      },
+      {
+        id: "stock-management",
+        title: "Stock Management Software",
+        price: "₹3,999",
+      },
+      {
+        id: "pharmacy",
+        title: "Pharmacy Software",
+        price: "₹3,999",
+      },
+      {
+        id: "jewellery",
+        title: "Jewellery Store Software",
+        price: "₹9,999",
+      },
+      {
+        id: "ecommerce",
+        title: "Online Shopping Website",
+        price: "₹14,999",
+      },
+      {
+        id: "gym-management",
+        title: "Gym Management Software",
+        price: "₹5,999",
+      },
+      {
+        id: "brand-design",
+        title: "Poster, Logo & Banner Design",
+        price: "₹999",
+      },
+      {
+        id: "video-editing",
+        title: "Video Editing",
+        price: "₹999",
+      },
+    ],
+    additionalServices: [
+      {
+        title: "GST Registration & GST Filing",
+        description: "Full assistance with new business GST registration and regular monthly/quarterly return filings.",
+        price: "₹2,999",
+      },
+      {
+        title: "Building Plan (নকশা) & Site Inspection",
+        description: "Architectural building plan (নকশা) drawings and on-site civil structural inspection services.",
+        price: "₹4,999",
+      },
+    ],
+  },
+  work: {
+    heading: "Engineered for real operational impact",
+    description: "Explore how we help high-growth companies replace legacy friction with tailored software.",
+    caseStudies: [
+      {
+        id: "fintech-billing",
+        industry: "B2B SaaS / FinTech",
+        title: "Automated recurring multi-currency billing and revenue reconciliation platform.",
+        metric: "Cut billing time by 60%",
+        tags: ["React", "Node.js", "PostgreSQL"],
+      },
+      {
+        id: "logistics-erp",
+        industry: "Logistics & Supply Chain",
+        title: "Cloud dispatch and real-time fleet telematics system for cross-border operations.",
+        metric: "Reduced transit downtime by 38%",
+        tags: ["React Native", "PostgreSQL", "AWS"],
+      },
+      {
+        id: "healthcare-crm",
+        industry: "HealthTech & Compliance",
+        title: "HIPAA-compliant client portal with encrypted clinical notes and automated scheduling.",
+        metric: "Boosted client throughput by 45%",
+        tags: ["React", "Node.js", "AWS"],
+      },
+    ],
+    testimonials: [
+      {
+        name: "MM Medical Hall",
+        role: "Pharmacy",
+        company: "Dudhkalmi, Hooghly",
+        location: "Dudhkalmi, Hooghly, 712701",
+        country: "India",
+        logo: "/mm_medical.png",
+        quote: "Expiry alert is the best thing for us, earlier lot of medicine get expired and we loose money. Staff learned fast and stock is very clear now. Not difficult to use, my staff is not computer people but they manage. Bill making is quick and support is always there if any problem.",
+      },
+      {
+        name: "Kanzar",
+        role: "Jewellery Store",
+        company: "Padmapukur, Kolkata",
+        location: "Padmapukur, Kolkata, 700014",
+        country: "India",
+        logo: "/kanzar_logo.png",
+        quote: "Website look exactly like our showroom, many customers told us its looking classy. Took little more time then we expected but result is good. Poster and logo all looks same style now, before it was all mixed up. Some changes we asked 2-3 times, but he did it without any problem. Happy with work.",
+      },
+      {
+        name: "Apon Bazar",
+        role: "Supermarket",
+        company: "Jangalpara, Hooghly",
+        location: "Jangalpara, Hooghly, 712701",
+        country: "India",
+        logo: "/APON_BAZAR.png",
+        quote: "Billing is very fast now, before it was taking too much time on counter. Stock report is useful also. Only thing, report page can be little more simple, but Tarekul said he will fix it. We were writing everything in register before, so much headache. Now item search is quick and customer not waiting long. Took us one week to get used to but now no problem.",
+      },
+    ],
+  },
+  contact: {
+    heading: "Let's discuss your project",
+    description: "Book an audit call or leave your specifications. Our senior technical team reviews every inquiry personally.",
+    email: "contact@simnosoft.com",
+    location: "Serving clients across India, US, UK & worldwide",
+    mapEmbedUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3679.9241708343247!2d88.14982171183784!3d22.731059679293175!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f87d384d826c01%3A0xadef48229d5e1e69!2sSimnosoft!5e0!3m2!1sen!2sin!4v1792096932631!5m2!1sen!2sin",
+    projectTypes: [
+      "Custom Web Application",
+      "Enterprise ERP / Internal Tool",
+      "Mobile App (iOS & Android)",
+      "System Modernization & API Integration",
+    ],
+    budgetRanges: [
+      "$10,000 - $25,000",
+      "$25,000 - $50,000",
+      "$50,000 - $100,000",
+      "$100,000+",
+    ],
+  },
+  footer: {
+    tagline: "Custom software built around how your business actually works.",
+    description: "Engineering custom web applications, ERPs, and mobile platforms for high-growth Indian enterprises and global innovators.",
+    copyright: "© 2026 Simnosoft Ltd. All rights reserved.",
+    links: [
+      { name: "About", href: "#about" },
+      { name: "Work", href: "#work" },
+      { name: "Contact", href: "#contact" },
+      { name: "Privacy Policy", href: "#" },
+      { name: "Terms of Service", href: "#" },
+    ],
+    socialLinks: [
+      { name: "LinkedIn", href: "#", icon: "Linkedin" },
+      { name: "GitHub", href: "#", icon: "Github" },
+      { name: "Twitter", href: "#", icon: "Twitter" },
+      { name: "Mail", href: "mailto:contact@simnosoft.com", icon: "Mail" },
+    ],
+  },
+};
+
+export default content;

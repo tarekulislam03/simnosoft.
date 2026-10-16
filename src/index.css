@@ -1,0 +1,72 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    color: #475467;
+    background-color: #FFFFFF;
+    font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+  }
+
+  h1, h2 {
+    font-family: 'Source Serif 4', Georgia, serif;
+    font-weight: 500;
+    color: #0B1F3A;
+    letter-spacing: -0.01em;
+  }
+
+  h3, h4, h5, h6 {
+    color: #0B1F3A;
+    font-weight: 600;
+  }
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-marquee {
+  display: flex;
+  width: max-content;
+  animation: marquee 30s linear infinite;
+  will-change: transform;
+}
+
+.animate-marquee:hover {
+  animation-play-state: paused;
+}
+
+@keyframes cardGlowSweep {
+  0% {
+    transform: translateX(-160%) skewX(-15deg);
+    opacity: 0;
+  }
+  25% {
+    opacity: 0.8;
+  }
+  50% {
+    opacity: 1;
+  }
+  75% {
+    opacity: 0.8;
+  }
+  100% {
+    transform: translateX(260%) skewX(-15deg);
+    opacity: 0;
+  }
+}
+
+.animate-card-glow {
+  animation: cardGlowSweep 3.6s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+  will-change: transform, opacity;
+}
