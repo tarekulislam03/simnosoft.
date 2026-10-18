@@ -77,7 +77,7 @@ export default function About() {
     const windowSize = 0.018; // Crisp, fast-paced transition per letter
 
     if (effectiveProgress <= charPos) {
-      // Inactive: muted purple-gray matching reference aesthetic
+      // Inactive: muted blue-gray matching reference aesthetic
       return {
         color: 'rgba(255, 255, 255, 0.2)',
       };
@@ -101,16 +101,16 @@ export default function About() {
   return (
     <section
       id="about"
-      className="relative bg-[#0A0017] py-14 sm:py-16 lg:py-20 border-b border-white/10 overflow-hidden scroll-mt-20"
+      className="relative bg-[#060D1D] py-14 sm:py-16 lg:py-20 border-b border-white/10 overflow-hidden scroll-mt-20"
     >
-      {/* Ambient Violet Diffusion matching Website Theme */}
+      {/* Ambient Blue Diffusion matching Website Theme */}
       <div
-        className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] sm:w-[950px] h-[450px] sm:h-[600px] rounded-full bg-purple-600/12 blur-[160px] pointer-events-none"
+        className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] sm:w-[950px] h-[450px] sm:h-[600px] rounded-full bg-blue-600/12 blur-[160px] pointer-events-none"
         aria-hidden="true"
       />
 
       <div className="relative max-w-[1240px] w-full mx-auto px-6 sm:px-8 lg:px-12">
-        {/* Eyebrow & Horizontal Rule matching Reference Screenshot */}
+        {/* Eyebrow & Horizontal Rule */}
         <div className="mb-6 sm:mb-8 lg:mb-10">
           <span className="font-sans text-[12px] sm:text-[13px] font-semibold uppercase tracking-[0.14em] text-white/90 block mb-3">
             {about.eyebrow || 'WHO WE ARE'}
@@ -118,7 +118,7 @@ export default function About() {
 
           {/* Split underline: prominent active bar + subtle continuation line */}
           <div className="flex items-center w-full">
-            <div className="h-[2px] w-28 sm:w-36 bg-purple-400 flex-shrink-0" />
+            <div className="h-[2px] w-28 sm:w-36 bg-sky-400 flex-shrink-0" />
             <div className="h-[1px] flex-1 bg-white/15" />
           </div>
         </div>

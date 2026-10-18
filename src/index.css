@@ -5,23 +5,24 @@
 @layer base {
   html {
     scroll-behavior: smooth;
+    background-color: #060D1D;
   }
 
   body {
-    color: #475467;
-    background-color: #FFFFFF;
+    color: rgba(255, 255, 255, 0.85);
+    background-color: #060D1D;
     font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
   }
 
   h1, h2 {
     font-family: 'Source Serif 4', Georgia, serif;
     font-weight: 500;
-    color: #0B1F3A;
+    color: #FFFFFF;
     letter-spacing: -0.01em;
   }
 
   h3, h4, h5, h6 {
-    color: #0B1F3A;
+    color: #FFFFFF;
     font-weight: 600;
   }
 }

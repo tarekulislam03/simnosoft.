@@ -2,16 +2,66 @@ import React from 'react';
 import { Mail, Phone } from 'lucide-react';
 import { content } from '../data/content';
 
-export default function Footer({ onOpenPrivacy, onOpenTerms }) {
+export default function Footer({ currentPage = 'home', onNavigate, onOpenPrivacy, onOpenTerms }) {
   const { brand, footer, navigation, contact } = content;
 
+  const handleLinkClick = (e, targetHref) => {
+    if (targetHref.startsWith('http') || targetHref.startsWith('mailto:') || targetHref.startsWith('tel:')) {
+      return;
+    }
+
+    e.preventDefault();
+
+    if (targetHref === '#' || targetHref === '') {
+      if (currentPage === 'home') {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      } else if (onNavigate) {
+        onNavigate('home');
+      }
+      return;
+    }
+
+    if (targetHref.startsWith('#') && targetHref.length > 1) {
+      if (currentPage === 'home') {
+        try {
+          const el = document.querySelector(targetHref);
+          if (el) {
+            el.scrollIntoView({ behavior: 'smooth' });
+          }
+        } catch (err) {
+          // Ignore invalid selector
+        }
+      } else if (onNavigate) {
+        onNavigate('home', targetHref);
+      }
+    }
+  };
+
+  const handlePrivacyClick = (e) => {
+    e.preventDefault();
+    if (onNavigate) {
+      onNavigate('privacy');
+    } else if (onOpenPrivacy) {
+      onOpenPrivacy();
+    }
+  };
+
+  const handleTermsClick = (e) => {
+    e.preventDefault();
+    if (onNavigate) {
+      onNavigate('terms');
+    } else if (onOpenTerms) {
+      onOpenTerms();
+    }
+  };
+
   return (
-    <footer className="relative bg-[#06000F] border-t border-white/10 text-white overflow-hidden">
-      {/* Subtle Ambient Violet Gradient at top */}
+    <footer className="relative bg-[#02050E] border-t border-white/10 text-white overflow-hidden">
+      {/* Subtle Ambient Blue Gradient at top */}
       <div 
         className="absolute top-0 left-1/2 -translate-x-1/2 w-full max-w-4xl h-32 pointer-events-none"
         style={{
-          background: 'radial-gradient(ellipse 60% 50% at 50% 0%, rgba(139, 92, 246, 0.15) 0%, transparent 70%)',
+          background: 'radial-gradient(ellipse 60% 50% at 50% 0%, rgba(37, 99, 235, 0.2) 0%, transparent 70%)',
         }}
         aria-hidden="true"
       />
@@ -23,7 +73,8 @@ export default function Footer({ onOpenPrivacy, onOpenTerms }) {
           <div className="lg:col-span-5 space-y-4">
             <a 
               href="#" 
-              className="inline-flex items-center gap-2 focus:outline-none focus-visible:ring-2 focus-visible:ring-purple-400 rounded-sm"
+              onClick={(e) => handleLinkClick(e, '#')}
+              className="inline-flex items-center gap-2 focus:outline-none focus-visible:ring-2 focus-visible:ring-sky-400 rounded-sm cursor-pointer"
               aria-label={brand.name}
             >
               {brand.logo ? (
@@ -34,12 +85,12 @@ export default function Footer({ onOpenPrivacy, onOpenTerms }) {
                 />
               ) : (
                 <span className="text-2xl font-bold tracking-tight text-white font-sans">
-                  {brand.name}<span className="text-purple-400">.</span>
+                  {brand.name}<span className="text-sky-400">.</span>
                 </span>
               )}
             </a>
 
-            <p className="font-serif italic text-purple-200 text-sm sm:text-base leading-relaxed">
+            <p className="font-serif italic text-sky-200 text-sm sm:text-base leading-relaxed">
               "{footer.tagline}"
             </p>
 
@@ -55,13 +106,21 @@ export default function Footer({ onOpenPrivacy, onOpenTerms }) {
             </h4>
             <ul className="space-y-2.5 text-sm text-white/60">
               <li>
-                <a href="#" className="hover:text-purple-300 transition-colors">
+                <a 
+                  href="#" 
+                  onClick={(e) => handleLinkClick(e, '#')}
+                  className="hover:text-sky-300 transition-colors cursor-pointer"
+                >
                   Home
                 </a>
               </li>
               {navigation.map((item) => (
                 <li key={item.name}>
-                  <a href={item.href} className="hover:text-purple-300 transition-colors">
+                  <a 
+                    href={item.href} 
+                    onClick={(e) => handleLinkClick(e, item.href)}
+                    className="hover:text-sky-300 transition-colors cursor-pointer"
+                  >
                     {item.name}
                   </a>
                 </li>
@@ -77,7 +136,11 @@ export default function Footer({ onOpenPrivacy, onOpenTerms }) {
             <ul className="space-y-2.5 text-sm text-white/60">
               {contact.projectTypes.map((type) => (
                 <li key={type}>
-                  <a href="#contact" className="hover:text-purple-300 transition-colors">
+                  <a 
+                    href="#contact" 
+                    onClick={(e) => handleLinkClick(e, '#contact')}
+                    className="hover:text-sky-300 transition-colors cursor-pointer"
+                  >
                     {type}
                   </a>
                 </li>
@@ -94,9 +157,9 @@ export default function Footer({ onOpenPrivacy, onOpenTerms }) {
             <div className="space-y-2">
               <a
                 href={`mailto:${contact.email}`}
-                className="inline-flex items-center gap-2 text-sm font-medium text-white hover:text-purple-300 transition-colors"
+                className="inline-flex items-center gap-2 text-sm font-medium text-white hover:text-sky-300 transition-colors"
               >
-                <Mail className="w-4 h-4 text-purple-400" />
+                <Mail className="w-4 h-4 text-sky-400" />
                 <span>{contact.email}</span>
               </a>
 
@@ -104,9 +167,9 @@ export default function Footer({ onOpenPrivacy, onOpenTerms }) {
                 <div>
                   <a
                     href={`tel:${contact.phone.replace(/[\s()-]/g, '')}`}
-                    className="inline-flex items-center gap-2 text-sm font-medium text-white hover:text-purple-300 transition-colors"
+                    className="inline-flex items-center gap-2 text-sm font-medium text-white hover:text-sky-300 transition-colors"
                   >
-                    <Phone className="w-4 h-4 text-purple-400" />
+                    <Phone className="w-4 h-4 text-sky-400" />
                     <span>{contact.phone}</span>
                   </a>
                 </div>
@@ -122,21 +185,21 @@ export default function Footer({ onOpenPrivacy, onOpenTerms }) {
           </div>
 
           <div className="flex items-center gap-6">
-            <button 
-              type="button"
-              onClick={onOpenPrivacy}
-              className="hover:text-white/80 transition-colors cursor-pointer bg-transparent border-0 p-0 text-xs text-white/50"
+            <a 
+              href="/privacy"
+              onClick={handlePrivacyClick}
+              className="hover:text-white/80 transition-colors cursor-pointer text-xs text-white/50"
             >
               Privacy Policy
-            </button>
+            </a>
             <span className="text-white/20">·</span>
-            <button 
-              type="button"
-              onClick={onOpenTerms}
-              className="hover:text-white/80 transition-colors cursor-pointer bg-transparent border-0 p-0 text-xs text-white/50"
+            <a 
+              href="/terms"
+              onClick={handleTermsClick}
+              className="hover:text-white/80 transition-colors cursor-pointer text-xs text-white/50"
             >
               Terms of Service
-            </button>
+            </a>
           </div>
         </div>
       </div>

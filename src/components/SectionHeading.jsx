@@ -14,7 +14,7 @@ export default function SectionHeading({
           {eyebrow}
         </span>
         <div className="flex items-center w-full">
-          <div className="h-[2px] w-28 sm:w-36 bg-purple-400 flex-shrink-0" />
+          <div className="h-[2px] w-28 sm:w-36 bg-sky-400 flex-shrink-0" />
           <div className="h-[1px] flex-1 bg-white/15" />
         </div>
       </div>

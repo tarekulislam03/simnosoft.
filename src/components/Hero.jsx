@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { ArrowUpRight } from 'lucide-react';
+import { ArrowUpRight, BadgePercent } from 'lucide-react';
 import { content } from '../data/content';
 
 export default function Hero() {
@@ -35,61 +35,44 @@ export default function Hero() {
   }, [displayText, isDeleting, wordIndex]);
 
   return (
-    <div className="relative overflow-hidden bg-[#0A0017]">
-      {/* 1. ATMOSPHERIC PURPLE GLOW BACKGROUND */}
+    <div className="relative overflow-hidden bg-[#060D1D]">
+      {/* 1. ATMOSPHERIC BLUE GLOW BACKGROUND */}
       <div 
         className="absolute inset-0 pointer-events-none" 
         style={{
-          background: 'radial-gradient(ellipse 70% 55% at 50% 30%, rgba(139, 92, 246, 0.45) 0%, rgba(109, 40, 217, 0.25) 40%, rgba(10, 0, 23, 0) 75%)',
+          background: 'radial-gradient(ellipse 90% 70% at 50% 25%, rgba(29, 78, 216, 0.45) 0%, rgba(14, 165, 233, 0.22) 45%, rgba(6, 13, 29, 0) 80%)',
         }}
         aria-hidden="true"
       />
       
-      {/* Secondary subtle center core glow */}
+      {/* Expansive ambient blue core glow */}
       <div 
-        className="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[350px] pointer-events-none rounded-full blur-[110px] bg-purple-500/25"
+        className="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[380px] sm:w-[850px] md:w-[1100px] h-[380px] sm:h-[550px] pointer-events-none rounded-full blur-[90px] sm:blur-[140px] bg-blue-600/30 sm:bg-blue-600/25"
+        aria-hidden="true"
+      />
+      <div 
+        className="absolute top-1/3 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[260px] sm:w-[550px] h-[220px] sm:h-[350px] pointer-events-none rounded-full blur-[60px] sm:blur-[90px] bg-sky-400/25 sm:bg-sky-400/20"
         aria-hidden="true"
       />
 
       {/* 2. MAIN HERO CONTENT */}
       <div className="relative pt-32 pb-14 md:pt-40 md:pb-16 max-w-[1200px] mx-auto px-6 text-center">
-        {/* Top Eyebrow: Overlapping Circular Flags & USP */}
-        <div className="flex flex-col items-center justify-center mb-6">
-          <div className="flex items-center -space-x-1.5 mb-2.5">
-            {/* India Flag */}
-            <span className="w-6 h-6 rounded-full overflow-hidden border-2 border-[#0A0017] shadow-sm inline-flex items-center justify-center bg-slate-900 text-xs">
-              🇮🇳
-            </span>
-            {/* US Flag */}
-            <span className="w-6 h-6 rounded-full overflow-hidden border-2 border-[#0A0017] shadow-sm inline-flex items-center justify-center bg-slate-900 text-xs">
-              🇺🇸
-            </span>
-            {/* UK Flag */}
-            <span className="w-6 h-6 rounded-full overflow-hidden border-2 border-[#0A0017] shadow-sm inline-flex items-center justify-center bg-slate-900 text-xs">
-              🇬🇧
-            </span>
-            {/* UAE Flag */}
-            <span className="w-6 h-6 rounded-full overflow-hidden border-2 border-[#0A0017] shadow-sm inline-flex items-center justify-center bg-slate-900 text-xs">
-              🇦🇪
-            </span>
-            {/* EU Flag */}
-            <span className="w-6 h-6 rounded-full overflow-hidden border-2 border-[#0A0017] shadow-sm inline-flex items-center justify-center bg-slate-900 text-xs">
-              🇪🇺
-            </span>
-          </div>
-          <p className="text-xs sm:text-sm font-medium text-white/80 tracking-wide">
-            {hero.eyebrow}
+        {/* Top Eyebrow: Offer Badge */}
+        <div className="flex items-center justify-center mb-6">
+          <p className="inline-flex items-center gap-1.5 text-xs sm:text-sm font-medium text-white/90 tracking-wide">
+            <BadgePercent className="w-4 h-4 text-sky-400" />
+            <span>Flat <strong className="font-bold text-white">15%</strong> off This Year</span>
           </p>
         </div>
 
         {/* Headline: Mix of Modern Sans Bold + Elegant Italic Serif */}
         <h1 className="text-4xl sm:text-6xl md:text-7xl font-bold tracking-tight text-white max-w-4xl mx-auto leading-[1.12]">
-          We <span className="font-serif italic font-normal text-purple-200">Develop</span> Products <br className="hidden sm:inline" />
+          We <span className="font-serif italic font-normal text-sky-200">Develop</span> Softwares <br className="hidden sm:inline" />
           That Drive{' '}
-          <span className="font-serif italic font-normal text-purple-200 inline-flex items-baseline">
+          <span className="font-serif italic font-normal text-sky-200 inline-flex items-baseline">
             <span>{displayText}</span>
             <span 
-              className="inline-block w-[3px] md:w-[4px] h-[0.78em] bg-purple-300 ml-1.5 animate-pulse translate-y-[2px]" 
+              className="inline-block w-[3px] md:w-[4px] h-[0.78em] bg-sky-300 ml-1.5 animate-pulse translate-y-[2px]" 
               aria-hidden="true" 
             />
           </span>
@@ -101,16 +84,16 @@ export default function Hero() {
         </p>
 
         {/* Call to Actions with Decorative Elements */}
-        <div className="relative mt-9 flex flex-wrap items-center justify-center gap-5">
+        <div className="relative mt-11 sm:mt-9 flex flex-wrap items-center justify-center gap-5">
           {/* Hand-drawn curved arrow pointing to the button (Left) */}
-          <div className="hidden lg:block absolute -left-16 sm:-left-24 top-1/2 -translate-y-1/2 pointer-events-none select-none">
+          <div className="block absolute -top-7 left-2 sm:left-auto sm:-left-16 lg:-left-24 sm:top-1/2 sm:-translate-y-1/2 pointer-events-none select-none">
             <svg 
               width="80" 
               height="45" 
               viewBox="0 0 80 45" 
               fill="none" 
               xmlns="http://www.w3.org/2000/svg"
-              className="text-white/60 -rotate-12"
+              className="w-12 h-7 sm:w-16 sm:h-9 lg:w-20 lg:h-11 text-white/60 -rotate-12"
             >
               <path 
                 d="M5 38C25 42 55 35 68 12M68 12L58 10M68 12L72 22" 
@@ -152,12 +135,12 @@ export default function Hero() {
           </a>
 
           {/* Floating 3D Notification Bell Element (Right) */}
-          <div className="hidden md:flex absolute -right-6 lg:-right-20 top-1/2 -translate-y-1/2 pointer-events-none select-none animate-[bounce_4s_ease-in-out_infinite]">
-            <div className="relative w-14 h-14 rounded-2xl bg-gradient-to-tr from-purple-600 via-pink-500 to-amber-300 p-0.5 shadow-xl shadow-purple-500/30 rotate-12">
-              <div className="w-full h-full bg-[#0A0017]/40 backdrop-blur-md rounded-[14px] flex items-center justify-center text-white">
-                <span className="text-2xl filter drop-shadow">🔔</span>
+          <div className="flex absolute -top-9 right-2 sm:right-auto sm:-right-8 lg:-right-20 sm:top-1/2 sm:-translate-y-1/2 pointer-events-none select-none animate-[bounce_4s_ease-in-out_infinite]">
+            <div className="relative w-12 h-12 sm:w-14 sm:h-14 rounded-2xl bg-gradient-to-tr from-purple-600 via-pink-500 to-amber-300 p-0.5 shadow-xl shadow-purple-500/30 rotate-12">
+              <div className="w-full h-full bg-[#060D1D]/60 backdrop-blur-md rounded-[14px] flex items-center justify-center text-white">
+                <span className="text-xl sm:text-2xl filter drop-shadow">🔔</span>
               </div>
-              <span className="absolute -top-1 -right-1 w-4 h-4 bg-amber-400 rounded-full border-2 border-[#0A0017] flex items-center justify-center text-[9px] font-bold text-slate-900">
+              <span className="absolute -top-1 -right-1 w-4 h-4 bg-amber-400 rounded-full border-2 border-[#060D1D] flex items-center justify-center text-[9px] font-bold text-slate-900">
                 1
               </span>
             </div>
@@ -166,14 +149,14 @@ export default function Hero() {
       </div>
 
       {/* 3. PARTNERS LOGO STRIP BELOW HERO (Infinite Looping Single-Row Marquee) */}
-      <div className="relative bg-[#070012] border-t border-b border-white/10 py-7 sm:py-8 overflow-hidden select-none">
+      <div className="relative bg-[#050D20] border-t border-b border-white/10 py-7 sm:py-8 overflow-hidden select-none">
         {/* Left & Right Gradient Fade Masks */}
         <div 
-          className="pointer-events-none absolute left-0 top-0 bottom-0 w-16 sm:w-32 bg-gradient-to-r from-[#070012] to-transparent z-10" 
+          className="pointer-events-none absolute left-0 top-0 bottom-0 w-16 sm:w-32 bg-gradient-to-r from-[#050D20] to-transparent z-10" 
           aria-hidden="true"
         />
         <div 
-          className="pointer-events-none absolute right-0 top-0 bottom-0 w-16 sm:w-32 bg-gradient-to-l from-[#070012] to-transparent z-10" 
+          className="pointer-events-none absolute right-0 top-0 bottom-0 w-16 sm:w-32 bg-gradient-to-l from-[#050D20] to-transparent z-10" 
           aria-hidden="true"
         />
 
