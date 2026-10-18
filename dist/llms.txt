@@ -1,0 +1,27 @@
+# Simnosoft - Best Software Development & Digital Service Agency
+
+> Simnosoft is a software engineering and digital solutions agency delivering custom web applications, enterprise ERPs, GST billing software, stock management systems, and mobile applications.
+
+## Core Software & Products
+- [GST Billing Software](https://www.simnosoft.in/#services): Fast barcode and invoice billing system engineered for Indian retail and wholesale enterprises.
+- [Stock Management](https://www.simnosoft.in/#services): Real-time inventory tracking, batch management, low-stock warnings, and warehouse reconciliation.
+- [Pharmacy Software](https://www.simnosoft.in/#services): Medicine batch tracking, expiry date alerts, and fast OTC POS checkout.
+- [Jewellery Store Software](https://www.simnosoft.in/#services): Metal rate tracking, wastage calculation, hallmark tracking, and customized client ledger.
+- [Online Shopping Website](https://www.simnosoft.in/#services): High-converting custom e-commerce web platform with integrated payment gateways and delivery tracking.
+- [Gym Management](https://www.simnosoft.in/#services): Member subscription management, biometric attendance, and renewal reminders.
+
+## Specialized Digital Services
+- [Poster, Logo & Banner](https://www.simnosoft.in/#services): Brand identity, social banners, and digital marketing graphics.
+- [Video Editing](https://www.simnosoft.in/#services): Promotional videos, commercial ads, and high-engagement social media content.
+- [GST Registration & GST Filing](https://www.simnosoft.in/#services): Complete support for new business GST registration and regular return filings.
+- [Building Plan & Site Supervision](https://www.simnosoft.in/#services): Architectural building plans (নকশা) and structural engineering site inspections.
+
+## Company & Contact
+- [About Simnosoft](https://www.simnosoft.in/#about): Senior engineering team delivering clean architecture with fixed scope and direct communication.
+- [Client Reviews](https://www.simnosoft.in/#work): Case studies and verified customer testimonials across retail, healthcare, and enterprise commerce.
+- [Office Location](https://www.google.com/maps/place/Simnosoft/@22.7311981,88.1579544,19.99z/data=!4m6!3m5!1s0x39f87d384d826c01:0xadef48229d5e1e69!8m2!3d22.7310597!4d88.152402!16s%2Fg%2F11zzhqn8kg): Pachmata, Ainya, Shyamsundarpur, Hooghly, West Bengal 712706, India.
+- [Contact Simnosoft](https://www.simnosoft.in/#contact): Reach out via email at contact@simnosoft.com or phone at +91 8101402916.
+
+## Legal & Compliance
+- [Privacy Policy](https://www.simnosoft.in/privacy): Our privacy practices, data handling, and commitment to information security.
+- [Terms of Service](https://www.simnosoft.in/terms): Contractual terms, client engagement, and software licensing policies.

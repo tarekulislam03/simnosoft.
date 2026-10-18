@@ -1,0 +1,40 @@
+{
+  "specVersion": "1.0",
+  "host": {
+    "displayName": "Simnosoft",
+    "identifier": "urn:domain:simnosoft.in",
+    "documentationUrl": "https://www.simnosoft.in/llms.txt",
+    "logoUrl": "https://www.simnosoft.in/main-logo.png"
+  },
+  "entries": [
+    {
+      "identifier": "urn:simnosoft:service:custom-software",
+      "displayName": "Simnosoft Custom Software & Digital Solutions",
+      "type": "text/markdown",
+      "url": "https://www.simnosoft.in/llms.txt",
+      "description": "Custom software development, enterprise ERP systems, GST billing software, stock management, and web applications.",
+      "tags": [
+        "software-development",
+        "gst-billing",
+        "erp",
+        "stock-management",
+        "pharmacy-software",
+        "web-development"
+      ],
+      "capabilities": [
+        "CustomSoftwareDevelopment",
+        "GSTBillingSoftware",
+        "StockManagement",
+        "WebApplications"
+      ],
+      "representativeQueries": [
+        "custom software development agency",
+        "best GST billing and stock management software",
+        "pharmacy inventory and billing software",
+        "web application and ERP development services"
+      ],
+      "version": "1.0.0",
+      "updatedAt": "2026-10-18T19:30:00Z"
+    }
+  ]
+}
