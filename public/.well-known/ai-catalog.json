@@ -2,15 +2,15 @@
   "specVersion": "1.0",
   "host": {
     "displayName": "Simnosoft",
-    "identifier": "urn:domain:simnosoft.in",
+    "identifier": "urn:air:simnosoft.in",
     "documentationUrl": "https://www.simnosoft.in/llms.txt",
     "logoUrl": "https://www.simnosoft.in/main-logo.png"
   },
   "entries": [
     {
-      "identifier": "urn:simnosoft:service:custom-software",
+      "identifier": "urn:air:simnosoft.in:services:software-solutions",
       "displayName": "Simnosoft Custom Software & Digital Solutions",
-      "type": "text/markdown",
+      "type": "text/markdown; profile=\"urn:air:agent-skills\"",
       "url": "https://www.simnosoft.in/llms.txt",
       "description": "Custom software development, enterprise ERP systems, GST billing software, stock management, and web applications.",
       "tags": [
