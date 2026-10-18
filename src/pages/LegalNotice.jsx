@@ -6,7 +6,7 @@ export default function LegalNotice() {
     window.scrollTo({ top: 0, behavior: 'instant' });
     document.title = 'Privacy Policy | Simnosoft';
     return () => {
-      document.title = 'Simnosoft - Web & Mobile Apps Engineered with Precision';
+      document.title = 'Simnosoft - Best Software Development & Digital Service Agency';
     };
   }, []);
 
