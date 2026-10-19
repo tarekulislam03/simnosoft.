@@ -129,10 +129,22 @@ export const content = {
     pricingDisclaimer: "Note: These are sample and standard pricing estimates. Final cost can vary according to your specific business requirements, custom features, and integration needs.",
     items: [
       {
+        id: "simple-retail-billing",
+        title: "Simple Retail Billing",
+        originalPrice: "₹1,999",
+        price: "₹1,699",
+      },
+      {
         id: "gst-billing",
         title: "GST Billing Software",
         originalPrice: "₹4,999",
         price: "₹4,249",
+      },
+      {
+        id: "restaurant-billing",
+        title: "Restaurant Billing",
+        originalPrice: "₹4,499",
+        price: "₹3,824",
       },
       {
         id: "stock-management",
@@ -145,6 +157,18 @@ export const content = {
         title: "Pharmacy Software",
         originalPrice: "₹3,999",
         price: "₹3,399",
+      },
+      {
+        id: "school-coaching",
+        title: "School & Coaching Centre",
+        originalPrice: "₹7,999",
+        price: "₹6,799",
+      },
+      {
+        id: "clinic-diagnostic",
+        title: "Clinic & Diagnostic Centre",
+        originalPrice: "₹9,999",
+        price: "₹8,499",
       },
       {
         id: "jewellery",
@@ -179,9 +203,15 @@ export const content = {
     ],
     additionalServices: [
       {
-        title: "GST Registration & GST Filing",
-        description: "Full assistance with new business GST registration and regular monthly/quarterly return filings.",
+        title: "GST No & Trade Licence Registration",
+        description: "Complete assistance with new business GST number registration and trade licence documentation.",
         price: "₹2,999",
+        noGst: true,
+      },
+      {
+        title: "GST Filing",
+        description: "Regular monthly & quarterly GST return filings (GSTR-1, GSTR-3B) and tax compliance support.",
+        price: "₹599/month",
         noGst: true,
       },
       {

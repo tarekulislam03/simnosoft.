@@ -1,12 +1,24 @@
+Simple Retail Billing
+Starting from
+₹1,999
 GST Billing Software
 Starting from
 ₹4,999
+Restaurant Billing
+Starting from
+₹4,499
 Stock Management Software
 Starting from
 ₹3,999
 Pharmacy Software
 Starting from
 ₹3,999
+School & Coaching Centre
+Starting from
+₹7,999
+Clinic & Diagnostic Centre
+Starting from
+₹9,999
 Jewellery Store Software
 Starting from
 ₹9,999
@@ -23,9 +35,12 @@ Video Editing
 Starting from
 ₹999
 Additional Specialized Services
-GST Registration & GST Filing
+GST No & Trade Licence Registration
 Starting from
 ₹2,999
+GST Filing
+Starting from
+₹599/month
 Building Plan (নকশা) & Site Inspection
 Starting from
 ₹4,999

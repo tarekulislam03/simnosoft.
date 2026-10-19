@@ -3,9 +3,13 @@
 > Simnosoft is a software engineering and digital solutions agency delivering custom web applications, enterprise ERPs, GST billing software, stock management systems, and mobile applications.
 
 ## Core Software & Products
+- [Simple Retail Billing](https://www.simnosoft.in/#services): Fast barcode and invoice billing system engineered for Indian retail and local shops.
 - [GST Billing Software](https://www.simnosoft.in/#services): Fast barcode and invoice billing system engineered for Indian retail and wholesale enterprises.
+- [Restaurant Billing](https://www.simnosoft.in/#services): Table management, KOT generation, and rapid bill printing for cafes and restaurants.
 - [Stock Management](https://www.simnosoft.in/#services): Real-time inventory tracking, batch management, low-stock warnings, and warehouse reconciliation.
 - [Pharmacy Software](https://www.simnosoft.in/#services): Medicine batch tracking, expiry date alerts, and fast OTC POS checkout.
+- [School & Coaching Centre](https://www.simnosoft.in/#services): Student admissions, fee management, batch scheduling, and parent communication.
+- [Clinic & Diagnostic Centre](https://www.simnosoft.in/#services): Patient appointments, test reporting, prescription management, and diagnostic records.
 - [Jewellery Store Software](https://www.simnosoft.in/#services): Metal rate tracking, wastage calculation, hallmark tracking, and customized client ledger.
 - [Online Shopping Website](https://www.simnosoft.in/#services): High-converting custom e-commerce web platform with integrated payment gateways and delivery tracking.
 - [Gym Management](https://www.simnosoft.in/#services): Member subscription management, biometric attendance, and renewal reminders.
@@ -13,7 +17,8 @@
 ## Specialized Digital Services
 - [Poster, Logo & Banner](https://www.simnosoft.in/#services): Brand identity, social banners, and digital marketing graphics.
 - [Video Editing](https://www.simnosoft.in/#services): Promotional videos, commercial ads, and high-engagement social media content.
-- [GST Registration & GST Filing](https://www.simnosoft.in/#services): Complete support for new business GST registration and regular return filings.
+- [GST No & Trade Licence Registration](https://www.simnosoft.in/#services): Complete assistance with new business GST number registration and municipal trade licence paperwork.
+- [GST Filing](https://www.simnosoft.in/#services): Regular monthly and quarterly GST return filings (GSTR-1, GSTR-3B) and tax compliance support.
 - [Building Plan & Site Supervision](https://www.simnosoft.in/#services): Architectural building plans (নকশা) and structural engineering site inspections.
 
 ## Company & Contact

@@ -53,7 +53,7 @@ export default function Services() {
                   </span>
                   {!item.noGst && (
                     <span className="font-sans text-xs sm:text-sm font-semibold text-white/60 tracking-normal">
-                      +GST%
+                      +18% GST
                     </span>
                   )}
                 </div>
@@ -68,7 +68,7 @@ export default function Services() {
             <span className="text-xs font-semibold uppercase tracking-wider text-sky-400 block mb-2.5 sm:mb-3">
               Additional Specialized Services
             </span>
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-3.5 sm:gap-4.5">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3.5 sm:gap-4.5">
               {services.additionalServices.map((addon, idx) => (
                 <div
                   key={idx}
@@ -104,7 +104,7 @@ export default function Services() {
                       </span>
                       {!addon.noGst && (
                         <span className="font-sans text-xs sm:text-sm font-semibold text-white/60 tracking-normal">
-                          +GST%
+                          +18% GST
                         </span>
                       )}
                     </div>
